@@ -49,6 +49,12 @@ body {
           transform: rotate(45deg);
 }
 
+.cross {
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+}
+
 .checkbox-task-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
