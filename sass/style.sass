@@ -1,0 +1,108 @@
+//Variables
+$red: #CC3939
+$grey: #B8B8B8
+$black: #383838
+
+//Global styles
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Jost"
+    font-weight: bold
+    color: $black
+
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+body
+    height: 100vh
+    width: 100vw
+    @extend .flex-center
+    flex-direction: column
+
+//Header and logo
+.header
+    width: 100vw
+    height: 130px
+    justify-content: space-between
+    align-items: center
+    padding: 0 12%
+
+.logo
+    height: 18px
+    width: 18px
+    background-color: $black
+    transform: rotate(45deg)
+
+//Checkbox & task
+.checkbox-task-wrapper
+    display: flex
+    align-items: center
+
+.checkbox
+    height: 13px
+    width: 13px
+    border: 2px solid #d4d4d4
+    border-radius: 4PX
+    margin-right: 20px
+
+.task
+    font-weight: normal
+    font-size: 15px
+
+.date
+    font-weight: normal
+    font-size: 11px
+    color: $grey
+
+//List info wrapper
+.list-info-wrapper
+    padding-left: 45px
+    flex: 1
+
+.title-wrapper
+    display: flex
+    align-items: center
+
+    h1
+        font-size: 27px
+        color: $black
+     
+.task-count
+    font-size: 11px
+    color: $grey
+    margin: 10px 0 25px 35px
+
+.progress-circle
+    height: 16px
+    width: 16px
+    border: 2px solid $red
+    border-radius: 100px
+    margin-right: 18px
+
+.seperator
+    height: 1px
+    width: 295px
+    background-color: $grey
+    margin: 0 0 0 35px
+//Tasks
+.list-wrapper
+    flex: 4.5
+    width: 100vw
+
+.task-date-wrapper
+    margin: 15px 0
+    padding-left: 45px
+.task-wrapper
+    padding-left: 45px
+    margin-bottom: 15px
+.date
+    margin: 7px 0 0 34px
+
+.done
+    background: linear-gradient(to right, #F2f2f6,#ffffff)
+    padding: 15px 0 15px 45px
+    margin-bottom: 15px
